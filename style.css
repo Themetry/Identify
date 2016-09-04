@@ -129,17 +129,7 @@ img {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
-}
-
-a:visited {
-	color: purple;
-}
-
-a:hover,
-a:focus,
-a:active {
-	color: midnightblue;
+	text-decoration: none;
 }
 
 a:focus {
@@ -178,7 +168,7 @@ a:active {
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
-	text-decoration: none;
+	text-decoration: inherit;
 	text-transform: none;
 	text-rendering: auto;
 	vertical-align: middle;
