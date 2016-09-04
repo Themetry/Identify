@@ -23,6 +23,8 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
+			<?php the_custom_logo(); ?>
+
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
 			<?php
@@ -30,6 +32,16 @@
 			if ( $description || is_customize_preview() ) : ?>
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
+			endif; ?>
+
+			<?php
+			if ( has_nav_menu( 'social' ) ) :
+				wp_nav_menu( array(
+					'theme_location'  => 'social',
+					'depth'           => 1,
+					'link_before'     => '<span class="screen-reader-text">',
+					'link_after'      => '</span>',
+					'container_class' => 'social-links', ) );
 			endif; ?>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
