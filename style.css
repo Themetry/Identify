@@ -1,14 +1,13 @@
 /*
 Theme Name: Identify
-Theme URI: https://themetry.com/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme URI: https://themetry.com/identify/
+Author: Themetry
+Author URI: https://themetry.com/
+Description: A starter theme for one-page business card websites.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: identify
-Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -79,25 +78,12 @@ svg:not(:root) {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
+body {
 	color: #404040;
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	clear: both;
 }
 
 /*--------------------------------------------------------------
@@ -128,10 +114,6 @@ img {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-	text-decoration: none;
-}
-
 a:focus {
 	outline: thin dotted;
 }
@@ -168,7 +150,7 @@ a:active {
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
-	text-decoration: inherit;
+	text-decoration: none;
 	text-transform: none;
 	text-rendering: auto;
 	vertical-align: middle;
@@ -356,8 +338,6 @@ a:active {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before,
-.clear:after,
 .site-header:before,
 .site-header:after,
 .site-footer:before,
@@ -367,9 +347,7 @@ a:active {
 	table-layout: fixed;
 }
 
-.clear:after,
 .site-header:after,
-.site-content:after,
 .site-footer:after {
 	clear: both;
 }
